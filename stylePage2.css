@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: turquoise;
+    color:white;
+    padding-left: 6%;
+    padding-right: 6%;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.header h2:link {
+    color: white;
+}
+
+.header span {
+    color: white;
+    border: 3px solid black;
+}
+
+.headerRight {
+    display: flex;
+    align-content: flex-end;
+}
+
+.mainContent {
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    background-color: white;
+}
+
+.article {
+    outline: 3px solid black;
+    padding: 1%;
+    background-color: wheat;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+
+.articleLink span {
+    color: blue;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.cAD {
+    background-color: #e51d2a;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding:1%;
+    color: white;
+    outline: 3px black solid; 
+}
+
+.cAD img {
+    margin: 3%;
+    outline: 3px solid white;
+}
+
+img {
+    max-width: 1065px;
+    max-height: 600px;
+}
+
+.mobileView {
+    display: none;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        max-width: 532px;
+        max-height: 300px;
+    }
+
+    .headerRight {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .mobileView {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .headerRight {
+        display: none;
+    }
+}
